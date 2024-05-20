@@ -1,5 +1,7 @@
+import { Icons } from "@/components/Icons";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Phone from "@/components/Phone";
+import Reviews from "@/components/Reviews";
 import { Check, Star } from "lucide-react";
 import Image from "next/image";
 
@@ -70,6 +72,77 @@ export default function Home() {
         </div>
 
         </MaxWidthWrapper>
+      </section>
+      {/* Value Proposition */}
+
+      <section className="bg-slate-100 py-24">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-32">
+            <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-6">
+              <h2 className="order-1 mt-2 tracking-tighter text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900">
+                What our  
+                <span className="relative px-2">Customers <Icons.underline className="hidden sm:block pointer-events-none absolute inset-x-0 -bottom-0 text-green-500"/></span>
+                 say
+              </h2>
+              <img src={'/snake-2.png'} className="w-24 order-0 lg:order-2" alt="Freelance image" />
+            </div>
+
+            <div className="mx-auto grid max-w-2xl grid-flow-col px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-y-16">
+              <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+               <div className="flex gap-0.5 mb-2">
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+               </div>
+
+               <div className="text-lg leading-8">
+                <p className=""> "The case feeles durable, had the case for 2 years now , 
+                  <span className="p-0.5 bg-slate-800 text-white">The Image is super clear and beautiful</span>, better than what i had before"
+                </p>
+               </div>
+               <div className="flex gap-4 mt-2">
+                <img src='/users/user-1.png' alt="user"  className="rounded-full h-12 w-12 object-cover"/>
+                <div className="flex flex-col">
+                  <p className="font-semibold">Raymond</p>
+                  <div className="flex gap-1.5 items-center text-zinc-600">
+                    <Check className="h-4 w-4 stroke-[3px] text-green-600"/>
+                    <p className="text-sm">Verified Purchase</p>
+                  </div>
+                </div>
+               </div>
+              </div>
+              <div className="flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20">
+               <div className="flex gap-0.5 mb-2">
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+                <Star className="h-5 w-5 text-green-600 fill-green-600"/>
+               </div>
+
+               <div className="text-lg leading-8">
+                <p className=""> "This is durable and very light and is mooth to touch, 
+                  <span className="p-0.5 bg-slate-800 text-white">I love my dog at the back</span>, very happy"
+                </p>
+               </div>
+               <div className="flex gap-4 mt-2">
+                <img src='/users/user-2.png' alt="user"  className="rounded-full h-12 w-12 object-cover"/>
+                <div className="flex flex-col">
+                  <p className="font-semibold">Thomas</p>
+                  <div className="flex gap-1.5 items-center text-zinc-600">
+                    <Check className="h-4 w-4 stroke-[3px] text-green-600"/>
+                    <p className="text-sm">Verified Purchase</p>
+                  </div>
+                </div>
+               </div>
+              </div>
+            </div>
+        </MaxWidthWrapper>
+
+        <div className="pt-16">
+          <Reviews/>
+        </div>
       </section>
     </div>
   );
