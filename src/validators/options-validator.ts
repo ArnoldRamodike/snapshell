@@ -46,7 +46,7 @@ export const MODELS =
         options: [
             {
                 label: 'Silicon',
-                value: "slicon",
+                value: "silicon",
                 description: undefined,
                 price: PRODUCT_PRICES.material.silicon,
             },
@@ -64,7 +64,7 @@ export const MODELS =
         options: [
             {
                 label: 'Smooth Finish',
-                value: "slismoothcon",
+                value: "smooth",
                 description: undefined,
                 price: PRODUCT_PRICES.finish.smooth,
             },
