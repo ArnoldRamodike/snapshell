@@ -44,7 +44,7 @@ const DesignConfigarator = ({imageUrl, configId, imageDimentions} : DesignConfig
             })
         },
         onSuccess: () => {
-            router.push(`/configure/preview?id${configId}`)
+            router.push(`/configure/preview/?id=${configId}`)
         },
     })
     const [options, setoptions] = useState<{
