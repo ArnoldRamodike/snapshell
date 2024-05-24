@@ -11,7 +11,6 @@ interface PreviewPageProps{
 
 const PreviewPage = async ({searchParams}: PreviewPageProps) => {
     const {id} = searchParams;
-    console.log(id);
 
     if (!id || typeof id !== 'string') {
         return notFound()
