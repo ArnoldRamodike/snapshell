@@ -42,6 +42,7 @@ export function constructMetadata({
       images: [image],
       creator: "riccoR"
     },
-    icons
+    icons,
+    metadataBase: new URL("https://snapshell.vercel.app"),
   }
 }
